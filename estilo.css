@@ -1,0 +1,35 @@
+
+body{
+    background: chartreuse;
+    text-align: center;
+}
+.jogo{
+    text-align: center;
+    background: black;
+    display: inline-block;
+    border: 5px solid black;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    grid-gap: 5px;
+}
+.quadrado {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial;
+    font-size: 3rem;
+    font-weight: bold;
+    background: white;
+  }
+  #mostrador{
+      color: #ffffff;
+      font-size: 30px;
+      margin: auto;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      width: 252px;
+      height: 80px;
+  }

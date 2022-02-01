@@ -62,23 +62,27 @@ function inicializarEspacos(){
 
     if((a1==b1 && a1==c1 && a1!="")||(a1 ==a2 && a1 == a3 && a1 !="")||(a1 == b2 && a1 == c3 && a1 != "")){
     vencedor = a1;
-}else if((b1 == b2 && b1 == b3 && b1!= "")||(a2 == b2 && a2 == c2 && a2 !="")||(a3 == b2 && a3 == c1 && a3 != "")){
+}else if((b2 == b1 && b2 == b3 && b2!= "")||(b2 == a2 && b2 == c2 && b2 !="")||(b2 == a3 && b2 == c1 && b2 != "")){
     vencedor = b2;
-}else if((a3 == b3 && a3 == c3 && a3!= "")||(c1 == c2 && c1 == c3 && c1 != ""));{
+}else if((c3 == b3 && c3 == a3 && c3!= "")||(c3 == c2 && c3 == c1 && c3 != "")){
     vencedor = c3;
     } 
     if (vencedor != ""){
      gameOver = true;
 
      await sleep(50);
-     alert(`O vencedor foi o : ${vencedor}`)
-    }else{
-
-    }
+     alert(`O vencedor foi o : ${vencedor}`);
+     var botao = document.querySelector("#reset")
+    botao.setAttribute("style", "display:")
+     }
 };
 
 function sleep(ms){
 
     return new Promise(resolve => setTimeout(resolve,ms));
+}
+function reset(){
+    
+    document.location.reload(true);
 }
 
